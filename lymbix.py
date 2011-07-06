@@ -48,8 +48,9 @@ class Lymbix:
     url = self.API_BASE + self.TONALIZE_MULTIPLE
     data = {'articles': articles}
     if options != None: data.update(options)
+    for key, value in data.iteritems(): data[key] = json.dumps(value)
     data = urllib.urlencode(data)
-  
+    
     headers = self._get_headers()
     request = urllib2.Request(url, data, headers)
     response = urllib2.urlopen(request)
@@ -72,6 +73,7 @@ class Lymbix:
     url = self.API_BASE + self.TONALIZE_DETAILED
     data = {'article': article}
     if options != None: data.update(options)
+    for key, value in data.iteritems(): data[key] = json.dumps(value)
     data = urllib.urlencode(data)
   
     headers = self._get_headers()
@@ -96,6 +98,7 @@ class Lymbix:
     url = self.API_BASE + self.TONALIZE
     data = {'article': article}
     if options != None: data.update(options)
+    for key, value in data.iteritems(): data[key] = json.dumps(value)
     data = urllib.urlencode(data)
   
     headers = self._get_headers()
@@ -128,6 +131,7 @@ class Lymbix:
     if (callback_url != None): data['callbackUrl'] = callback_url
     if (options != None): data.update(options)
   
+    for key, value in data.iteritems(): data[key] = json.dumps(value)
     data = urllib.urlencode(data)
   
     headers = self._get_headers()
