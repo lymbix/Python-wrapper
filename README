@@ -1,0 +1,20 @@
+The Lymbix sentiment analysis wrapper is a module that eases the use of the API for python developers.
+
+INSTALL
+-------
+Installing the package is the same as all python modules.
+
+You need to run the following:
+ -python setup.py install (you might have to run it with sudo)
+
+
+USAGE
+------
+
+import lymbix
+
+api = lymbix.Lymbix("API KEY")
+
+result = api.tonalize("Lymbix loves you")
+
+print result

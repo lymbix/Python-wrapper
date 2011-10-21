@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: Python-wrapper
+Version: 0.8.0
+Summary: A wrapper for the Lymbix API that allows you to easily use the service's methods
+Home-page: https://github.com/lymbix/Python-wrapper
+Author: Maxime Santerre
+Author-email: msanterre@lymbix.com
+License: MIT
+Description: UNKNOWN
+Keywords: lymbix api sentiment analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
